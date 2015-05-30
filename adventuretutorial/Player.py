@@ -51,7 +51,7 @@ class Player:
 			if isinstance(i, Items.Weapon):
 				if i.damage > max_dmg:
 					max_damage = i.damage
-					best_weapon = 1
+					best_Weapon = i
 					
 		print("You use{} against {}!".format(best_Weapon.name, enemy.name))
 		enemy.hp -= best_Weapon.damage
